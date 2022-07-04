@@ -20,7 +20,9 @@ body {
 header {
     color: white;
     background-color: #010B40;
-    padding: 15px;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
 nav {
@@ -39,14 +41,67 @@ nav {
     list-style: none;
 }
 
-.nav-info ul li {
-    font-weight: 500;
-    padding: 15px;
-    margin: 0 10px;
-
-}
-
 .nav-info ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+.nav-info>ul>li>a:hover {
+    color: #94C6F2;
+}
+
+/* banner style */
+.banner-part {
+    background-color: rgba(148, 198, 242, 0.5);
+    height: calc(100vh - 80px);
+    color: #010B40;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner-left h1 {
+    font-size: 4em;
+}
+
+.banner-left p {
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+
+.gear-button {
+    color: white;
+    background-color: #010B40;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: 2px solid #010B40;
+}
+
+.gear-button:hover {
+    color: #010B40;
+    background-color: white;
+    border: 2px solid #010B40;
+    transition: .6s ease-in-out;
+}
+
+.banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
 }
