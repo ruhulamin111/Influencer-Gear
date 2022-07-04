@@ -195,8 +195,20 @@ footer {
     padding: 10px;
 }
 
+/* navbar toggle */
+#nav-toggler {
+    display: none;
+}
+
+.nav-toggler-icon {
+    display: none;
+}
+
 /* responsive mobile */
 @media only screen and (max-width:668px) {
+    .banner-left h1 {
+        font-size: 2em;
+    }
 
     .banner img {
         width: 60%;
@@ -209,6 +221,29 @@ footer {
 
     .logo {
         flex-direction: column;
+    }
+
+    .nav-toggler-icon {
+        display: block;
+    }
+
+    .nav-info {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        transform: translateY(-300px);
+    }
+
+    .nav-info ul {
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: rgba(1, 12, 64, 0.8);
+    }
+
+    #nav-toggler:checked~.nav-info {
+        transform: translateY(0px);
+        transition: transform .5s ease-in-out;
     }
 }
 
