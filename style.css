@@ -160,3 +160,37 @@ nav {
     margin: 20px 0;
     font-size: 1.5em;
 }
+
+/* feature style */
+.gap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* footer style */
+footer {
+    background-color: #010B40;
+    color: white;
+    padding: 50px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social a {
+    color: white;
+    padding: 10px;
+}
