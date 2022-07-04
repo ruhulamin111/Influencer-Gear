@@ -194,3 +194,29 @@ footer {
     color: white;
     padding: 10px;
 }
+
+/* responsive mobile */
+@media only screen and (max-width:668px) {
+
+    .banner img {
+        width: 60%;
+    }
+
+    .product,
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+}
+
+/* responsive tablet */
+@media only screen and (min-width:669px) and (max-width:992px) {
+
+    .banner,
+    .product {
+        grid-template-columns: 1fr 1fr;
+    }
+}
