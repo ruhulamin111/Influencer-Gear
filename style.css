@@ -105,3 +105,58 @@ nav {
     background-image: url('./images/Circle\ design.svg');
     background-repeat: no-repeat;
 }
+
+/* logo style */
+.logo {
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* product style */
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.10);
+
+}
+
+.item-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-info {
+    line-height: 2em;
+}
+
+.item-info p i {
+    color: sandybrown;
+}
+
+.item-info h2 {
+    margin: 10px 0;
+    color: #010326;
+}
+
+.more {
+    float: right;
+}
+
+.section-title {
+    color: #010B40;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+}
